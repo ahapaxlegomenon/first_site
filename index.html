@@ -1,86 +1,135 @@
 <!DOCTYPE html>
 <head>
-  <link href="/normalize.css" rel="stylesheet">
-    <title>Colleen McCaskell | Digital Marketer Extraordinaire</title>
-  <style>
-    header {
-      text-align: center;
-      background: url('http://i.imgur.com/CwYwFQF.jpg');
-      background-size: cover;
-      color: white;
+<link href="/normalize.css" rel="stylesheet">
+<script src="/assets/jquery.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<style>
+header {
+  text-align: center;
+  background: url('http://i.imgur.com/CwYwFQF.jpg');
+  background-size: cover;
     }
-    a {
-      color: white;
-    }
-    h1 {
-      font-size: 40px;
-    }
-    img {
-      margin: 20px 0px 0px 0px;
-      border: 7px solid white;
-      border-radius: 20px;
-    }
-    ul {
-      padding: 10px;
-      background: rgba(0,0,0,0.5);
-    }
-    li {
-      display: inline;
-      padding: 0px 10px 0px 10px;
-    p {
-      font-size: 20px;
-    }
-    body {
-      text-align: center;
-      background-size: cover;
-      background-position: center;
-      color: white;
-      font-family: helvetica;
-    }
-    input {
-      border: 0;
-      padding: 7px;
-      font-size: 18px;
-    }
-    input[type="submit"] {
-      background: green;
-      color: white;
-    }
-    @media (max-width: 500px) {
-      h1 {
-        font-size: 36px;
-        padding: 5px;
-      }
-      li {
-        padding: 5px;
-        display: block;
-      }
-    }
-  </style>
+h1 {
+  font-family: 'Londrina Shadow', cursive;
+  text-align: center;
+  font-size: 85px;
+  color: #36454f;
+  margin: 15px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: #555555;
+  margin: 10 0 150px 0;
+}
+ul {
+  padding: 10px;
+  background: rgba(0,0,0,0.5);
+}
+li {
+  display: inline;
+  padding: 0 10px 0 10px;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+  max-width: 700px;
+  background: #111111;
+}
+div {
+  font-family: 'Roboto', sans-serif;
+  height: 250px;
+  background-size: cover;
+  position: relative;
+  margin: 20px 0 5px 0;
+  border-radius: 15px;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.5));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 25px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 25px;
+}
+.first{
+  background-image: url("http://i.imgur.com/9uas49d.jpg?2");
+}
+.second{
+  background-image: url("http://i.imgur.com/tsDgGIR.jpg?1");
+}
+.third{
+  background-image: url("http://i.imgur.com/KtkCf4t.jpg?1");
+}
+img {
+  margin: 20px 5px 5px 5px;
+  border: #36454f;
+  border-radius: 10px;
+}
+a {
+  margin: 20px 5px 5px 5px;
+  border: #36454f;
+  border-radius: 10px;
+  color: white;
+}
+small {
+  opacity: .75;
+}
+@media (max-width: 500px) {
+h1 {
+  font-size: 40px;
+  margin-top: 15px;
+  line-height: 50px;
+}
+h2 {
+  font-size: 20px;
+  margin: 20px 0 50px 0;
+}
+li {
+  padding: 6px;
+  display: block;
+}
+div {
+  margin: 120px 5px 0 5px;
+}
+p {
+  font-size: 20px;
+  line-height: 22px;
+}
+small {
+  font-size: 16px;
+}
+}
+</style>
 </head>
 <body>
   <header>
-    <img src="http://i.imgur.com/apl1h4d.jpg?1">
     <h1>Colleen McCaskell</h1>
+    <h2>Digital Marketer Extraordinaire</h2>
     <ul>
       <li><a href="#">About Me</a></li>
       <li><a href="#">Services</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
   </header>
-  <p>Hi! I'm Colleen, an Edinburgh-based digital marketer.</p>
-    <h3>Areas of Expertise</h3>
-    <ol>
-      <li>PPC</li>
-      <li>SEO</li>
-      <li>Content Strategy & Analysis</li>
-      <li>Link Building Strategy</li>
-      <li>Copywriting</li>
-      <li>Web Analytics</li>
-    </ol>
-  <p> Need some help with your website?</p>
-  <input type="email" placeholder="Your email">
-  <input type="submit">
-  <a href="http://www.linkedin.com" target="_blank">Visit my profile on LinkedIn.</a>
+<div class="first">
+  <p>PPC<br />
+  <small>Paid media strategy, execution, maintenance and optimisation from Google Adwords and Bing to Facebook. </small></p>
+</div>
+<div class="second">
+  <p>SEO<br />
+  <small>From on page optimisation to Google Analytics, boosting website profiles across their primarily online properties.</small></p>
+</div>
+<div class="third">
+  <p>Content<br />
+  <small>Planning and strategy that ecncompasses buyer persons and the  ideation and promotion / link building process.</small></p>
+</div>
+<img src="http://i.imgur.com/apl1h4d.jpg?1">
+<a href="http://linkedin.com/pub/colleen-mccaskell/b/368/430"><img src="http://i.imgur.com/SfGOK7z.png?1"/></a>
 </body>
-<!--article, header, nav, footer, div, span -->
